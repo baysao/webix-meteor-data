@@ -95,11 +95,11 @@ webix.proxy.meteor = {
 	save:"meteor->ref"
 	*/
 	save:function(view, obj, dp, callback){
-		// console.log('save');
-		// console.log(obj);
-		// console.log(this.collection);
+		//console.log('save');
+		//console.log(obj);
+		
 		this.parseSource();
-
+//console.log(this.collection);
 		//flag to prevent triggering of onchange listeners on the same component
 		view.meteor_saving = true;
 
